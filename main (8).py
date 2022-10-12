@@ -6,11 +6,9 @@ x = int(input("What number is being divided?: "))
 y = int(input("What is this number divided by?: "))
 
 #Every time it loops, count is increased by 1, showing how many times this while loop has ran. The amount of time it loops is the quotient. These lines of code loops subtracting the first value by the second value without it being a negative remainder. 
-if x < 10:
-  count = -1
-else:
-  count = 0
-  
+
+count = 0
+
 while x > 0:
   x -= y
   count += 1
@@ -18,6 +16,7 @@ while x > 0:
 if x < 0:
   for i in range(1):
     x += y
+    count -= 1
     break
 
 #This shows the user the quotient and the remainder of this equation.
